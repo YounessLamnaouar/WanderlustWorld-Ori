@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Skranji&family=Teko&family=Tektur&family=Titillium+Web&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+}
+body{
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(200, 227, 223);
+}
+header{
+    background-color: rgb(200, 227, 223);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+}
+header .logo{
+    margin-top: -12px;
+}
+header div{
+    margin-top: 5px;
+}
+header .p{
+    color: rgb(85, 144, 146);
+    letter-spacing: 2px;
+}
+header .map{
+    margin-top:20px;  
+}
+header .map a{
+    text-decoration: none;
+    color: rgb(85, 144, 146);
+    font-weight: bold;
+}
+header .map a:hover{
+    color: rgb(22, 86, 88);
+}
+header .map i:hover{
+    scale: 1.1;
+}
+header .map label{
+    margin-left: -40px;
+}
+header .map input{
+    padding: 5px 2px;
+    outline:none;
+}
+.liste #check,.liste label{
+    visibility: hidden;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    z-index: 1;
+    font-size: 20px;
+    color: rgb(22, 86, 88);
+    font-weight: bold;
+}
+.liste{
+    position: relative;
+}
+.liste ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+}
+.liste ul li{
+    margin-top:15px;
+}
+.liste ul li a{
+    color: rgb(85, 144, 146);
+    text-decoration: none;
+    transition: .5s;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.liste ul li a:hover,.liste ul li .about{
+    color: #fff;
+    background-color: rgb(85, 144, 146);
+    border: none;
+}
+.container{
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(to right,rgba(22, 84, 86, 0.889),rgba(22, 84, 86,0.889)),url(../backgroundabout.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.ctr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.ctr .logo{
+    width: 40%;
+    text-align: center;
+    margin-top: 15%;
+    filter: drop-shadow(11px 5px 15px rgb(27,176,206));
+}
+.text{
+    width: 40%;
+    height: 400px;
+    margin-top: 6%;
+}
+.text h1{
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 15px solid rgb(27,176,206);
+    display: inline-block;
+    font-size: 50px;
+    letter-spacing: 20px;
+    font-weight: bold;
+    color: rgb(27,176,206);
+    text-shadow: 5px 5px 20px rgb(22, 86, 88);
+    margin-bottom: 60px;
+}
+.text .p1{
+    overflow: hidden;
+    font-size: 20px;
+    text-shadow: 5px 5px 15px #00000074;
+    color: #fff;
+    text-align: justify;
+    height: 300px;
+}
+.text .p{
+    animation:p 100s linear infinite;
+    line-height: 50px;
+}
+@keyframes p{
+    0%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-20%);
+    }
+    40%{
+        transform: translateY(-40%);
+    }
+    60%{
+        transform: translateY(-60%);
+    }
+    80%{
+        transform: translateY(-80%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+footer{
+    background-color: rgb(22, 86, 88);
+    color: #fff;
+    display: grid;
+    grid-template-areas:"app payment info"
+                        "p payment info"
+                        "follow follow follow";
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+footer .app{
+    grid-area: app;
+    color: gold;
+}
+footer .p{
+    grid-area: p;
+}
+footer .p a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+}
+footer .p a:hover{
+    color: rgb(0, 115, 255);
+}
+footer .payment{
+    grid-area: payment;
+}
+footer .payment h3{
+    color: gold;
+}
+footer .payment i{
+    font-size: 50px;
+}
+footer .follow i:hover,footer .app img:hover{
+    scale: 1.05;
+}
+footer .info{
+    grid-area: info;
+}
+footer .info h3{
+    color: gold;
+}
+footer .info h3+p{
+    font-size: 40px;
+    font-weight: bold;
+}
+footer .follow{
+   grid-area: follow;
+   margin: auto;
+   color: gold;
+}
+footer .follow h3{
+    font-size: 30px;
+}
+footer .follow .foll{
+    display: flex;
+    gap: 20px;
+}
+footer .follow i{
+    font-size: 50px;
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+    header{
+        height: 100px;
+        overflow-x: hidden;
+    }
+}
+@media only screen and (max-width:480px){
+    .langue ul{
+        width: 20px;
+        transition: .5s;
+    }
+    .langue ul:hover{
+        width: 100px;
+    }
+    .liste ul{
+        flex-direction: column;
+    }
+    .liste ul li a:hover{
+        background-color: transparent;
+    }
+    .liste ul li a{
+        color: #fff;
+    }
+    .liste label{
+        visibility: visible;
+    }
+    .liste #check:checked ~ ul,.liste #check:checked ~ ul a{
+        height: 200px;
+        width: 100%;
+        background-color: #fff;
+        color: rgb(22, 86, 88);
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    header{
+        height: 150px;
+        overflow-x: hidden;
+    }
+    .liste ul li{
+        text-align: center;
+    }
+    .liste{
+        overflow: hidden;
+    }
+    footer{
+        padding: 20px 0;
+    }
+    footer .p a{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    footer .payment i{
+        font-size: 20px;
+    }
+    footer .info h3+p{
+        font-size: 15px;
+    }
+    footer h3{
+        font-size: 15px !important;
+    }
+    footer .follow .foll{
+        gap: 20px;
+    }
+    footer .follow i{
+        font-size: 20px;
+    }
+    footer .lastp1{
+        font-size: 10px;
+    }
+    .container{
+        height: 700px;
+    }
+    .ctr{
+        flex-direction: column;
+    }
+    .ctr .logo{
+        margin: auto;
+    }
+    .ctr .logo img{
+        width: 100px;
+        margin-top: 15px;
+    }
+    .text{
+        width: 80%;
+        height: 300px;
+        margin: auto;
+        margin-top: 6%;
+        text-align: center;
+    }
+    .text h1{
+        padding: 10px 0;
+        font-size: 20px;
+        letter-spacing: 20px;
+        margin-bottom: 60px;
+    }
+    .text .p1{
+        font-size: 15px;
+        height: 300px;
+    }
+    .text .p{
+        line-height: 25px;
+    }
+}
+.langue{
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    height: 22px;
+    width: 100px;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1;
+}
+.langue:hover{
+    height: 300px;
+}
+.langue ul{
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(200, 227, 223);
+    overflow: hidden;
+}
+.langue li{
+    list-style: none;
+    color: rgb(85, 144, 146);
+}
+.langue a{
+    text-decoration: none;
+    color: rgb(85, 144, 146);
+    background-color: rgb(200, 227, 223);
+    padding: 10px 25px;
+}
+.langue a:hover,.langue .fr{
+    color: #fff;
+    background-color: rgb(22, 86, 88);
+}
+.langue .ar{
+    padding: 10px 28px;
+}
+.langue .fr{
+    padding: 10px 27px;
+}

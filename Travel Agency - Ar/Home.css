@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Skranji&family=Teko&family=Tektur&family=Titillium+Web&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+}
+body{
+    height: 1000px;
+    width: 100%;
+}
+header{
+    background-color: rgb(200, 227, 223);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+}
+header div{
+    margin-top: 5px;
+}
+header .logo{
+    margin-top: -12px;
+}
+header .p{
+    color: rgb(85, 144, 146);
+    letter-spacing: 2px;
+}
+header .map{
+    margin-top:20px;  
+}
+header .map a{
+    text-decoration: none;
+    color: rgb(85, 144, 146);
+    font-weight: bold;
+}
+header .map a:hover{
+    color: rgb(22, 86, 88);
+}
+header .map i:hover{
+    scale: 1.1;
+}
+header .map label{
+    margin-left: -40px;
+}
+header .map input{
+    padding: 5px 2px;
+    outline:none;
+}
+.liste #check,.liste label{
+    visibility: hidden;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    z-index: 1;
+    font-size: 20px;
+    color: rgb(22, 86, 88);
+    font-weight: bold;
+}
+.liste{
+    position: relative;
+}
+.liste ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 100%;
+}
+.liste ul li{
+    margin-top:15px;
+}
+.liste ul li a{
+    color: rgb(85, 144, 146);
+    text-decoration: none;
+    transition: .5s;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.liste ul li a:hover,.liste ul li .home{
+    color: #fff;
+    background-color: rgb(85, 144, 146);
+    border: none;
+}
+.h{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    color: #fff;
+    line-height: 150px;
+    overflow: hidden;
+}
+.vid{
+    position: absolute;
+    z-index: -1;
+}
+.h .h1,.h .h2,.h .h3{
+    width: 480px;
+    margin: auto;
+    overflow: hidden;
+    height: 150px;
+    text-shadow: 2px 2px 10px rgb(85, 144, 146);
+}
+.h .h2{
+    width: 850px;
+}
+.h .h3{
+    width: 610px;
+}
+.h h1,.h h2,.h h3{
+    font-size: 90px;
+    font-weight: 200;
+    overflow: hidden;
+    transition: 1s;
+}
+.h h1{
+    animation: h 10s linear 2s infinite both;
+}
+.h h2{
+    font-size: 100px;
+    animation: h2 10s linear 2s infinite both;
+    transition: 2s ease-in-out;
+}
+.h h3{
+    font-size: 30px;
+    animation: h3 10s linear 2s infinite both;
+    transition: 2s ease-in-out;
+}
+@keyframes h{
+    0%{
+        width: 0%;
+    }
+    20%{
+        width: 100%;
+    }
+    40%{
+        width: 100%;
+    }
+    60%{
+        width: 100%;
+    }
+    80%{
+        width: 100%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes h2{
+    0%{
+        width: 0%;
+    }
+    20%{
+        width: 100%;
+    }
+    40%{
+        width: 100%;
+    }
+    60%{
+        width: 100%;
+    }
+    80%{
+        width: 100%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes h3{
+    0%{
+        width: 0%;
+    }
+    20%{
+        width: 100%;
+    }
+    40%{
+        width: 100%;
+    }
+    60%{
+        width: 100%;
+    }
+    80%{
+        width: 100%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.h h1:hover,.h h2:hover,.h h3:hover{
+    color: rgb(85, 144, 146);
+}
+.why{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(85, 144, 146);
+    color: #fff;
+    box-shadow: 2px 2px 20px rgb(22, 86, 88) inset;
+    display: grid;
+    grid-template-areas:"h1 h1 h1 h1"
+                        "pp1 pp2 pp3 pp4"
+                        "ii1 ii2 ii3 ii4"
+                        "bb1 bb2 bb3 bb4";
+}
+.why .h1{
+    grid-area: h1;
+    font-size: 60px;
+    font-weight: 400;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: -30px;
+}
+.why .pp1,.why .pp2,.why .pp3,.why .pp4{
+    font-size: 10px;
+    border-right: 2px solid #fff;
+    height: 50px;
+    text-align: justify;
+    padding:0 15px;
+}
+.why .pp1{
+    grid-area: pp1;
+}
+.why .pp2{
+    grid-area: pp2;
+}
+.why .pp3{
+    grid-area: pp3;
+}
+.why .pp3{
+    grid-area: pp4;
+}
+.why .ii1,.why .ii2,.why .ii3,.why .ii4{
+    text-align: center;
+    font-size: 30px;
+}
+.why .ii1{
+    grid-area: ii1;
+}
+.why .ii2{
+    grid-area: ii2;
+}
+.why .ii3{
+    grid-area: ii3;
+}
+.why .ii4{
+    grid-area: ii4;
+}
+.why .bb1,.why .bb2,.why .bb3,.why .bb4{
+    text-align: center;
+    font-size: 20px;
+}
+.why .bb1{
+    grid-area: bb1;
+}
+.why .bb2{
+    grid-area: bb2;
+}
+.why .bb3{
+    grid-area: bb3;
+}
+.why .bb4{
+    grid-area: bb4;
+}
+footer{
+    background-color: rgb(22, 86, 88);
+    color: #fff;
+    display: grid;
+    grid-template-areas:"app payment info"
+                        "p payment info"
+                        "follow follow follow";
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+footer .app{
+    grid-area: app;
+    color: gold;
+}
+footer .p{
+    grid-area: p;
+}
+footer .p a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+}
+footer .p a:hover{
+    color: rgb(0, 115, 255);
+}
+footer .payment{
+    grid-area: payment;
+}
+footer .payment h3{
+    color: gold;
+}
+footer .payment i{
+    font-size: 50px;
+}
+footer .follow i:hover,footer .app img:hover{
+    scale: 1.05;
+}
+footer .info{
+    grid-area: info;
+}
+footer .info h3{
+    color: gold;
+}
+footer .info h3+p{
+    font-size: 40px;
+    font-weight: bold;
+}
+footer .follow{
+   grid-area: follow;
+   margin: auto;
+   color: gold;
+}
+footer .follow h3{
+    font-size: 30px;
+}
+footer .follow .foll{
+    display: flex;
+    gap: 20px;
+}
+footer .follow i{
+    font-size: 50px;
+}
+
+@media only screen and (min-width:481px) and (max-width:768px){
+    .h{
+        height: 500px;
+        line-height: 150px;
+    }
+    .h .h1,.h .h2,.h .h3{
+        width: 440px;
+        height: 100px;
+    }
+    .h .h2{
+        width: 500px;
+    }
+    .h .h3{
+        width: 410px;
+    }
+    .h h1,.h h2,.h h3{
+        font-size: 70px;
+    }
+    .h h2{
+        font-size: 60px;
+    }
+    .h h3{
+        font-size: 20px;
+    }
+    .langue ul{
+        width: 20px;
+        transition: .5s;
+    }
+    .langue ul:hover{
+        width: 100px;
+    }
+    header .map input{
+        margin-right: 5px;
+        width: 100px;
+    }
+    .why{
+        margin-top: -120px;
+    }
+}
+.langue{
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    height: 22px;
+    width: 100px;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1;
+}
+.langue:hover{
+    height: 300px;
+}
+.langue ul{
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(200, 227, 223);
+    overflow: hidden;
+}
+.langue li{
+    list-style: none;
+    color: rgb(85, 144, 146);
+}
+.langue a{
+    text-decoration: none;
+    color: rgb(85, 144, 146);
+    background-color: rgb(200, 227, 223);
+    padding: 10px 25px;
+}
+.langue a:hover,.langue .en{
+    color: #fff;
+    background-color: rgb(22, 86, 88);
+}
+.langue .ar{
+    padding: 10px 28px;
+}
+.langue .fr{
+    padding: 10px 27px;
+}
+@media only screen and (max-width:480px){
+    .map input{
+        width: 120px;
+        margin-left: -10px;
+    }
+    .langue ul{
+        float: top;
+        width: 20px;
+        transition: .5s;
+        visibility: visible;
+    }
+    .langue ul:hover{
+        width: 100px;
+    }
+    .liste ul li{
+        text-align: center;
+    }
+    .liste{
+        overflow: hidden;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    header{
+        height: 150px;
+    }
+    .liste ul{
+        flex-direction: column;
+    }
+    .liste ul li a:hover{
+        background-color: transparent;
+    }
+    .liste ul li a{
+        color: #fff;
+    }
+    .liste label{
+        visibility: visible;
+    }
+    .liste #check:checked ~ ul,.liste #check:checked ~ ul a{
+        height: 200px;
+        width: 100%;
+        background-color: transparent;
+        color: rgb(22, 86, 88);
+    }
+    .h{
+        height: 300px;
+    }
+    .h h2,.h h3{
+        display: none;
+    }
+    .h .h1{
+        width: 150px;
+    }
+    .h h1{
+        font-size: 30px;
+    }
+    .why{
+        margin-top: -120px;
+    }
+    .why .h1{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .why .pp1,.why .pp2,.why .pp3,.why .pp4{
+        font-size: 6px;
+    }
+    .why .pp3{
+        border-right: none;
+    }
+    .why .ii1,.why .ii2,.why .ii3,.why .ii4{
+        font-size: 15px;
+    }
+    .why .bb1,.why .bb2,.why .bb3,.why .bb4{
+        font-size: 10px;
+    }
+    footer{
+        padding: 20px 0;
+    }
+    footer .p a{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    footer .payment i{
+        font-size: 20px;
+    }
+    footer .info h3+p{
+        font-size: 15px;
+    }
+    footer h3{
+        font-size: 15px;
+    }
+    footer .follow .foll{
+        gap: 20px;
+    }
+    footer .follow i{
+        font-size: 20px;
+    }
+    footer .lastp1{
+        font-size: 10px;
+    }
+    footer h3{
+        font-size: 15px !important;
+    }
+}

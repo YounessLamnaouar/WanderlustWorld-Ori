@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Skranji&family=Teko&family=Tektur&family=Titillium+Web&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+}
+body{
+    width: 100%;
+    height: 1000px;
+}
+header{
+    background-color: rgb(200, 227, 223);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+}
+header div{
+    margin-top: 5px;
+}
+header .logo{
+    margin-top: -12px;
+}
+header .p{
+    color: rgb(85, 144, 146);
+    letter-spacing: 2px;
+}
+header .map{
+    margin-top:20px;  
+}
+header .map a{
+    text-decoration: none;
+    color: rgb(85, 144, 146);
+    font-weight: bold;
+}
+header .map a:hover{
+    color: rgb(22, 86, 88);
+}
+header .map i:hover{
+    scale: 1.1;
+}
+header .map label{
+    margin-left: -40px;
+}
+header .map input{
+    padding: 5px 2px;
+    outline:none;
+}
+.liste #check,.liste label{
+    visibility: hidden;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    z-index: 1;
+    font-size: 20px;
+    color: rgb(22, 86, 88);
+    font-weight: bold;
+}
+.liste{
+    position: relative;
+}
+.liste ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 100%;
+}
+.liste ul li{
+    margin-top:15px;
+}
+.liste ul li a{
+    color: rgb(85, 144, 146);
+    text-decoration: none;
+    transition: .5s;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.liste ul li a:hover,.liste ul li .dest{
+    color: #fff;
+    background-color: rgb(85, 144, 146);
+    border: none;
+}
+.banner{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.banner .video{
+    position: absolute;
+    z-index: -1;
+}
+form{
+    margin-top: 170px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(85, 144, 146);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.region #region,.banner input,.depart,.arrival,.person #person{
+    padding: 10px 20px;
+    outline: none;
+}
+.listecontainer{
+    color: #fff;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+}
+optgroup{
+    background-color: rgb(85, 144, 146);
+    color: #fff;
+}
+option{
+    background-color: rgb(200, 227, 223);
+    color: #000;
+}
+.listecontainer .search input[type="submit"]{
+    background-color: rgb(36, 143, 66);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px 80px;
+}
+.listecontainer .search input[type="submit"]:hover{
+    background-color: rgb(50, 255, 47);
+}
+.container1{
+    padding: 2rem;
+    background-color: rgb(85, 144, 146);
+}
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    overflow-x: hidden;
+}
+.slider a{
+    aspect-ratio: 16 / 9;
+}
+.slider img{
+    width: 100%;
+    height: 99.1%;
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+    opacity: 1;
+}
+.container2{
+    background-color: rgb(85, 144, 146);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.container2 .divA,.container2 .divB,.container2 .divC,.container2 .divD,.container2 .divE,.container2 .divF{
+    width: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(200, 227, 223);
+    border: 1px solid #fff;
+    letter-spacing: 5px;
+}
+.container2 .divA .prix1,.container2 .divB .prix2,.container2 .divC .prix3,
+.container2 .divD .prix4,.container2 .divE .prix5,.container2 .divF .prix6{
+    border: 1px solid #fff;
+    border-bottom: none;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+    border-radius: 20px;
+}
+.container2 .name1,.container2 .name2,.container2 .name3,.container2 .name4,.container2 .name5,.container2 .name6
+,.container2 .select1,.container2 .select2,.container2 .select3,.container2 .select4,.container2 .select5,.container2 .select6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(22, 86, 88);
+}
+.container2 .name1,.container2 .name2,.container2 .name3,.container2 .name4,.container2 .name5,.container2 .name6{
+    background-color: rgb(200, 227, 223);
+}
+.container2 .name1 h1,.container2 .name2 h1,.container2 .name3 h1,.container2 .name4 h1,.container2 .name5 h1,.container2 .name6 h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.container2 .name1 h3,.container2 .name2 h3,.container2 .name3 h3,.container2 .name4 h3,.container2 .name5 h3,.container2 .name6h3{
+    font-size: 20px;
+}
+.container2 .divA .prix1 h3,.container2 .divB .prix2 h3,.container2 .divC .prix3 h3,
+.container2 .divD .prix4 h3,.container2 .divE .prix5 h3,.container2 .divF .prix6 h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+.container2 .select1 a,.container2 .select2 a,.container2 .select3 a,.container2 .select4 a,.container2 .select5 a,.container2 .select6 a{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
+.container2 .select1:hover,.container2 .select2:hover,.container2 .select3:hover,.container2 .select4:hover,.container2 .select5:hover,.container2 .select6:hover{
+    background-color: rgba(22, 86, 88, 0.401);
+}
+.img1,.img2,.img3,.img4,.img5,.img6{
+    border-right:1px solid #fff ;
+    width: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.container2 img{
+    transition: 0.5s ease;
+    scale: 1.04;
+}
+.container2 img:hover{
+    scale:1.2;
+}
+footer{
+    background-color: rgb(22, 86, 88);
+    color: #fff;
+    display: grid;
+    grid-template-areas:"app payment info"
+                        "p payment info"
+                        "follow follow follow";
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+footer .app{
+    grid-area: app;
+    color: gold;
+}
+footer .p{
+    grid-area: p;
+}
+footer .p a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+}
+footer .p a:hover{
+    color: rgb(0, 115, 255);
+}
+footer .payment{
+    grid-area: payment;
+}
+footer .payment h3{
+    color: gold;
+}
+footer .payment i{
+    font-size: 50px;
+}
+footer .follow i:hover,footer .app img:hover{
+    scale: 1.05;
+}
+footer .info{
+    grid-area: info;
+}
+footer .info h3{
+    color: gold;
+}
+footer .info h3+p{
+    font-size: 40px;
+    font-weight: bold;
+}
+footer .follow{
+   grid-area: follow;
+   margin: auto;
+   color: gold;
+}
+footer .follow h3{
+    font-size: 30px;
+}
+footer .follow .foll{
+    display: flex;
+    gap: 20px;
+}
+footer .follow i{
+    font-size: 50px;
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .listecontainer{
+        font-size: 15px;
+    }
+    .listecontainer .search input[type="submit"]{
+        padding: 10px 45px;
+    }
+    .region #region,.banner input,.depart,.arrival,.person #person{
+        width: 50px;
+    }
+}
+@media only screen and (max-width:480px){
+    .langue ul{
+        width: 20px;
+        transition: .5s;
+    }
+    .langue ul:hover{
+        width: 100px;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    header .map input{
+        margin-right: 5px;
+        width: 100px;
+    }
+    header{
+        height: 140px;
+    }
+    .liste ul li{
+        text-align: center;
+    }
+    .liste{
+        overflow: hidden;
+    }
+    .liste ul{
+        flex-direction: column;
+    }
+    .liste ul li a:hover{
+        background-color: transparent;
+    }
+    .liste ul li a{
+        color: #fff;
+    }
+    .liste label{
+        visibility: visible;
+    }
+    .liste #check:checked ~ ul,.liste #check:checked ~ ul a{
+        height: 200px;
+        width: 100%;
+        background-color: transparent;
+        color: rgb(22, 86, 88);
+    }
+    footer{
+        padding: 20px 0;
+    }
+    footer .p a{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    footer .payment i{
+        font-size: 20px;
+    }
+    footer .info h3+p{
+        font-size: 15px;
+    }
+    footer h3{
+        font-size: 15px !important;
+    }
+    footer .follow .foll{
+        gap: 20px;
+    }
+    footer .follow i{
+        font-size: 20px;
+    }
+    footer .lastp1{
+        font-size: 10px;
+    }
+    .banner{
+        height: 400px;
+    }
+    form{
+        margin-top: 170px;
+        width: 100%;
+        height: 60px;
+    }
+    .listecontainer{
+        width: 100%;
+        font-size: 15px;
+    }
+    .region #region,.banner input,.depart,.arrival,.person #person{
+        padding: 8px 10px;
+    }
+    .listecontainer .search input[type="submit"]{
+        padding: 10px 30px;
+    }
+    .slider img{
+        height: 94%;
+    }
+    .slider-nav a{
+        width: 1rem;
+        height: 1rem;
+    }
+    .img1,.img2,.img3,.img4,.img5,.img6{
+        width: 40%;
+    }
+    .container1{
+        margin-top: -180px;
+    }
+    .container2{
+        width: 100%;
+    }
+    .container2 .divA,.container2 .divB,.container2 .divC,.container2 .divD,.container2 .divE,.container2 .divF{
+        width: 90%;
+        height: 300px;
+        letter-spacing: 0;
+    }
+    .container2 .name1 h1,.container2 .name2 h1,.container2 .name3 h1,.container2 .name4 h1,.container2 .name5 h1,.container2 .name6 h1{
+        font-size: 15px;
+    }
+    .container2 .name1 h3,.container2 .name2 h3,.container2 .name3 h3,.container2 .name4 h3,.container2 .name5 h3,.container2 .name6h3{
+        font-size: 15px;
+    }
+    .container2 .divA .prix1 h3,.container2 .divB .prix2 h3,.container2 .divC .prix3 h3,
+    .container2 .divD .prix4 h3,.container2 .divE .prix5 h3,.container2 .divF .prix6 h3{
+        font-size: 15px;
+    }
+    .container2 .select1 a,.container2 .select2 a,.container2 .select3 a,.container2 .select4 a,.container2 .select5 a,.container2 .select6 a{
+        font-size: 15px;
+    }
+    .img1,.img2,.img3,.img4,.img5,.img6{
+        border-right:1px solid #fff ;
+        width: 100%;
+    }
+}
+.langue{
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    height: 22px;
+    width: 100px;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1;
+}
+.langue:hover{
+    height: 300px;
+}
+.langue ul{
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(200, 227, 223);
+    overflow: hidden;
+}
+.langue li{
+    list-style: none;
+    color: rgb(85, 144, 146);
+}
+.langue a{
+    text-decoration: none;
+    color: rgb(85, 144, 146);
+    background-color: rgb(200, 227, 223);
+    padding: 10px 25px;
+}
+.langue a:hover,.langue .fr{
+    color: #fff;
+    background-color: rgb(22, 86, 88);
+}
+.langue .ar{
+    padding: 10px 28px;
+}
+.langue .fr{
+    padding: 10px 27px;
+}
+.selectbtn{
+    padding: 150px 25px;
+}

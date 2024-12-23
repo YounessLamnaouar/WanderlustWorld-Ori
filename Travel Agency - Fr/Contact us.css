@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Skranji&family=Teko&family=Tektur&family=Titillium+Web&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+}
+body{
+    height: 1000px;
+    width: 100%;
+    overflow-x: hidden;
+}
+header{
+    background-color: rgb(200, 227, 223);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+}
+header .logo{
+    margin-top: -12px;
+}
+header div{
+    margin-top: 5px;
+}
+header .p{
+    color: rgb(85, 144, 146);
+    letter-spacing: 2px;
+}
+header .map{
+    margin-top:20px;  
+}
+header .map a{
+    text-decoration: none;
+    color: rgb(85, 144, 146);
+    font-weight: bold;
+}
+header .map a:hover{
+    color: rgb(22, 86, 88);
+}
+header .map i:hover{
+    scale: 1.1;
+}
+header .map label{
+    margin-left: -40px;
+}
+header .map input{
+    padding: 5px 2px;
+    outline:none;
+}
+.liste #check,.liste label{
+    visibility: hidden;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    z-index: 1;
+    font-size: 20px;
+    color: rgb(22, 86, 88);
+    font-weight: bold;
+}
+.liste{
+    position: relative;
+}
+.liste ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 100%;
+}
+.liste ul li{
+    margin-top:15px;
+}
+.liste ul li a{
+    color: rgb(85, 144, 146);
+    text-decoration: none;
+    transition: .5s;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.liste ul li a:hover,.liste ul li .contact{
+    color: #fff;
+    background-color: rgb(85, 144, 146);
+    border: none;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: 
+    linear-gradient(to right,rgba(85, 144, 146, 0.7),rgba(22, 86, 88, 0.7)),url(../pexels-snapwire-6992.jpg);
+    background-size: cover;
+    color: #fff;
+}
+.container h1{
+    text-align: center;
+    font-size: 50px;
+}
+.container .p1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.form{
+    width: 70%;
+    height: 35%;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 3px 3px 20px rgb(0, 0, 0);
+}
+.form .contact{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.644);
+    color: rgb(22, 86, 88);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+}
+.form .contact .adress,.form .contact .phone,.form .contact .email{
+   display: flex; 
+   gap: 20px;
+   margin-left: 5%;
+}
+.form .contact .adress i,.form .contact .phone i,.form .contact .email i{
+    font-size:40px;
+}
+.form .contact .adress h4,.form .contact .phone h4,.form .contact .email h4{
+    font-size: 30px;
+}
+.form .message{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 60%;
+    background-color: rgb(85, 144, 146);
+    position: relative;
+}
+.s1,.s2,.s3{
+    position: absolute;
+    left: 29%;
+    top: 30%;
+    font-size: 15px;
+    transition: .5s ease;
+    pointer-events: none;
+}
+.s2{
+    left: 29%;
+    top: 44%;
+}
+.s3{
+    left: 29%;
+    top: 58%;
+}
+input:focus + .s1,input:valid + .s1,input:focus + .s2,input:valid + .s2,input:focus + .s3,input:valid + .s3{
+    translate: 20px -20px;
+    font-size: 10px;
+    color: rgb(22, 86, 88);
+}
+.form .message h2{
+    font-size: 40px;
+    text-align: center;
+}
+.form .message form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    color: #fff;
+    margin: auto;
+    padding: 10px 30px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom:3px solid #fff ;
+}
+form input[type="submit"]{
+    color: rgb(22, 86, 88);
+    background-color: #fff;
+    border: none;
+    margin-top: 10%;
+    padding:10px 100px;
+    font-size: 30px;
+    font-weight: 300;
+    border: #fff 2px solid;
+    transition: ease .5s;
+}
+form input[type="submit"]:hover{
+    color: #fff;
+    border: #fff 2px solid;
+    background-color: rgb(22, 86, 88);
+}
+footer{
+    background-color: rgb(22, 86, 88);
+    color: #fff;
+    display: grid;
+    grid-template-areas:"app payment info"
+                        "p payment info"
+                        "follow follow follow";
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top:6%; 
+}
+footer .app{
+    grid-area: app;
+    color: gold;
+}
+footer .p{
+    grid-area: p;
+}
+footer .p a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+}
+footer .p a:hover{
+    color: rgb(0, 115, 255);
+}
+footer .payment{
+    grid-area: payment;
+}
+footer .payment h3{
+    color: gold;
+}
+footer .payment i{
+    font-size: 50px;
+}
+footer .follow i:hover,footer .app img:hover{
+    scale: 1.05;
+}
+footer .info{
+    grid-area: info;
+}
+footer .info h3{
+    color: gold;
+}
+footer .info h3+p{
+    font-size: 40px;
+    font-weight: bold;
+}
+footer .follow{
+   grid-area: follow;
+   margin: auto;
+   color: gold;
+}
+footer .follow h3{
+    font-size: 30px;
+}
+footer .follow .foll{
+    display: flex;
+    gap: 20px;
+}
+footer .follow i{
+    font-size: 50px;
+}
+.description{
+    height: 300px;
+    font-size: 30px;
+    overflow-y: hidden;
+    border-top: #fff 5px solid;
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    text-align: justify;
+}
+.description .scroll{
+    animation: scroll 220s linear infinite both;
+    line-height: 100px;
+}
+@keyframes scroll{
+    0%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-20%);
+    }
+    40%{
+        transform: translateY(-40%);
+    }
+    60%{
+        transform: translateY(-60%);
+    }
+    80%{
+        transform: translateY(-80%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+    header .map input{
+        margin-right: 5px;
+        width: 100px;
+    }
+}
+@media only screen and (max-width:480px){
+    .langue ul{
+        width: 20px;
+        transition: .5s;
+    }
+    .langue ul:hover{
+        width: 100px;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    header .map input{
+        margin-right: 5px;
+        width: 100px;
+    }
+    header{
+        height: 140px;
+    }
+    .liste ul li{
+        text-align: center;
+    }
+    .liste{
+        overflow: hidden;
+    }
+    .liste ul{
+        flex-direction: column;
+    }
+    .liste ul li a:hover{
+        background-color: transparent;
+    }
+    .liste ul li a{
+        color: #fff;
+    }
+    .liste label{
+        visibility: visible;
+    }
+    .liste #check:checked ~ ul,.liste #check:checked ~ ul a{
+        height: 200px;
+        width: 100%;
+        background-color: transparent;
+        color: rgb(22, 86, 88);
+    }
+    footer{
+        padding: 20px 0;
+    }
+    footer .p a{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    footer .payment i{
+        font-size: 20px;
+    }
+    footer .info h3+p{
+        font-size: 15px;
+    }
+    footer h3{
+        font-size: 15px;
+    }
+    footer .follow .foll{
+        gap: 20px;
+    }
+    footer .follow i{
+        font-size: 20px;
+    }
+    footer .lastp1{
+        font-size: 10px;
+    }
+    footer h3{
+        font-size: 15px !important;
+    }
+    .container{
+        height: 100%;
+    }
+    .container h1{
+        font-size: 30px;
+    }
+    .container .p1{
+        font-size: 15px;
+    }
+    .form{
+        width: 70%;
+        height: 35%;
+        flex-direction: column;
+    }
+    .form .contact{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .form .contact .adress,.form .contact .phone,.form .contact .email{
+       gap: 20px;
+       margin-left: 5%;
+    }
+    .form .contact .adress i,.form .contact .phone i,.form .contact .email i{
+        font-size:15px;
+    }
+    .form .contact .adress h4,.form .contact .phone h4,.form .contact .email h4{
+        font-size: 15px;
+    }
+    .form .message{
+        width: 100%;
+    }
+    .s1,.s2,.s3{
+        left: 15%;
+        top: 32.5%;
+        font-size: 15px;
+    }
+    .s2{
+        left: 15%;
+        top: 47%;
+    }
+    .s3{
+        left: 15%;
+        top: 62%;
+    }
+    form input[type="submit"]:hover{
+    border: rgb(22, 86, 88) 2px solid;
+    }
+    input:focus + .s1,input:valid + .s1,input:focus + .s2,input:valid + .s2,input:focus + .s3,input:valid + .s3{
+        font-size: 6px;
+    }
+    .form .message h2{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    form input{
+        border-bottom: 1px solid #fff;
+    }
+    form input[type="submit"]{
+        padding:10px 40%;
+        font-size: 20px;
+    }
+    .description{
+        font-size: 15px;
+    }
+    .description h1{
+        font-size: 20px;
+    }
+    .description .scroll{
+        line-height: 50px;
+    }
+}
+.langue{
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    height: 22px;
+    width: 100px;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1;
+}
+.langue:hover{
+    height: 300px;
+}
+.langue ul{
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(200, 227, 223);
+    overflow: hidden;
+}
+.langue li{
+    list-style: none;
+    color: rgb(85, 144, 146);
+}
+.langue a{
+    text-decoration: none;
+    color: rgb(85, 144, 146);
+    background-color: rgb(200, 227, 223);
+    padding: 10px 25px;
+}
+.langue a:hover,.langue .en{
+    color: #fff;
+    background-color: rgb(22, 86, 88);
+}
+.langue .ar{
+    padding: 10px 28px;
+}
+.langue .fr{
+    padding: 10px 27px;
+}

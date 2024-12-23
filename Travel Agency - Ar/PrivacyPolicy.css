@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Skranji&family=Teko&family=Tektur&family=Titillium+Web&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+    color: #fff;
+}
+body{
+    height: 1000px;
+    width: 100%;
+    background-color: #000;
+}
+.container{
+    width: 100%;
+}
+.container h1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    padding: 30px 0;
+}
+.container hr{
+    width: 10%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.container .text{
+    width: 80%;
+    margin: auto;
+}
+.container .text p{
+    line-height: 40px;
+    font-size: 20px;
+    text-align: justify;
+}
+.container .text p::first-letter{
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+    padding: 10px 5px;
+    border: 5px solid;
+    margin-right: 5px;
+    background-color: rgb(22,84,86);
+}
+.container .text p::first-line{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.container .media{
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    margin-left: 20px;
+    padding: 0 10px;
+    border-left: 4px solid;
+    position: fixed;
+}
+.container .media i:hover{
+    scale: 1.2;
+}
+.container .back{
+    background-image: linear-gradient(to top right,rgb(22,84,86),#000,blue);
+    padding: 10px 40px;
+    border: 2px solid;
+    margin-left: 45%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.container .back:hover{
+    padding: 10px 45px;
+
+}
+.text .contact,.text .PrivacyPo{
+    color: rgb(22,84,86);
+}
+.text .contact:hover,.text .PrivacyPo:hover{
+    color: #fff;
+}
+@media only screen and (max-width:480px){
+    .container h1{
+        font-size: 30px;
+    }
+    .container hr{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .container .text{
+        width: 60%;
+    }
+    .container .text p{
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .container .text p::first-letter{
+        font-size: 15px;
+        padding: 10px 5px;
+        margin-right: 5px;
+    }
+    .container .media{
+        font-size: 20px;
+        padding: 0 10px;
+        border-left: 2px solid;
+        position: fixed;
+    }
+    .container .back{
+        padding: 2px 30px;
+        font-size: 15px;
+    }
+    .container .back:hover{
+        padding: 4px 40px;
+    }
+}

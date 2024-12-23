@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul{
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+header ul a{
+    text-decoration: none;
+    color: #fff;
+    padding: 2px;
+}
+header ul a:hover{
+    color: rgb(0, 183, 255);
+}
+header ul .h{
+    border-bottom: 2px solid rgb(0, 183, 255);
+    color: rgb(0, 183, 255);
+}
+header input{
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgba(255, 255, 255, 0.223);
+    border: 1px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+}
+header input:focus{
+    border: 5px solid rgb(0, 183, 255);
+    border-radius: 8px;
+}
+header i{
+    position: absolute;
+    top: 5.5%;
+    right: 12%;
+    font-size: 15px;
+}
+.container{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas:"logo logo name name"
+                        "capture capture app app";
+}
+.container .logo{
+    grid-area: logo;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 30%;
+    margin-top:20px;
+}
+.container .name{
+    grid-area: name;
+    width: 300px;
+    height: 200px;
+    display: flex;flex-direction: column;
+    justify-content: space-between;
+    margin-left: -25%;
+    margin-top: 20px;
+}
+.container .name h1{
+    font-size: 30px;
+    color: #fff;
+}
+.container .name h6{
+    font-size: 15px;
+    color: rgb(0, 183, 255);
+}
+.container .name a{
+    background-color:rgb(0, 183, 255);
+    color: #000;
+    padding: 15px 50px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+}
+.container .name a:hover{
+    background-color: rgb(65, 198, 251);
+}
+.container .name p{
+    color: #fff;
+}
+.container .capture{
+    grid-area: capture;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.27);
+    border-radius: 8px;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+.container .capture h3{
+    color: #fff;
+    font-size: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+}
+.container .capture img{
+    margin-top: 10px;
+}
+.container .app{
+    grid-area: app;
+    margin-left: 5%;
+    margin-top: 10%;
+    background-color: #000;
+    border-radius: 8px;
+}
+.container .app h3{
+    color: #fff;
+    font-size: 30px;
+    margin-left: 20%;
+    padding: 20px 0;
+}
+.container .app img{
+    margin-left: 20%;
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+}
+@media only screen and (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        height: 80px;
+    }
+    header img{
+        width: 200px;
+    }
+    header ul{
+        display: none;
+    }
+    header input{
+        height: 30px;
+    }
+    header i{
+        top: 5.5%;
+        right: 12%;
+        font-size: 15px;
+    }
+    .container .logo{
+        width: 100px;
+        height: 100px;
+        margin-left: 10px;
+    }
+    .container .logo img{
+        width: 100px;   
+    }
+    .container .name{
+        width: 100px;
+        height: 100px;
+    }
+    .container .name .a{
+        width: 100%;
+        margin-top: 40px;
+        margin-left: 5px;
+    }
+    .container .name .a a{
+        padding: 10px 100px;
+    }
+    .container .name h1{
+        font-size: 20px;
+    }
+    .container .name h6{
+        font-size: 13px;
+    }
+    .container .capture{
+        width: 200px;
+        overflow: hidden;
+    }
+    .container .capture h3{
+        font-size: 20px;
+    }
+    .container .capture img{
+        margin-top: 10px;
+    }
+    .container .app{
+        margin-left: 60px;
+    }
+    .container .app h3{
+        font-size: 20px;
+    }
+    .container .app img{
+        width: 150px;
+        margin-left: 10px;
+    }
+}

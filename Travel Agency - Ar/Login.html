@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderlustWorld | تسجيل الدخول</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="website icon" type="png" href="../WanderlustWorld.logo.jpg">
+</head>
+<body>
+    <div class="langue">
+        <ul>
+            <li><i class="fa-solid fa-bars" style="color: #559092;"></i> اللغة</li>
+            <li><a class="en" href="../Travel Agency - Original-En/Login.html">الإنجليزية</a></li>
+            <li><a class="fr" href="../Travel Agency - Fr/Login.html">الفرنسية</a></li>
+            <li><a class="ar" href="../Travel Agency - Ar/Login.html">العربية</a></li>
+        </ul>
+    </div>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">تسجيل</button>
+                <button type="button" class="toggle-btn" onclick="register()">إنشاء</button>
+            </div>
+            <div class="social-icons">
+                <a target="_blank" href="https://facebook.com/"><i class="fa-brands fa-facebook" style="color: #559092;"></i></a>
+                <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-x-twitter" style="color: #559092;"></i></a>
+                <a target="_blank" href="https://accounts.google.com/"><i class="fa-brands fa-google" style="color: #559092;"></i></a>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="اسم المستخدم" required>
+                <input type="password" class="input-field" placeholder="كلمة المرور" required>
+                <input type="checkbox" class="check-box"><span>تذكر كلمة المرور</span>
+                <a href="Home.html" class="submit-btn">تسجيل الدخول</a>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="اسم المستخدم" required>
+                <input type="email" class="input-field" placeholder="بريد إلكتروني" required>
+                <input type="password" class="input-field" placeholder="كلمة المرور" required>
+                <input type="checkbox" class="check-box"><span>أنا موافق على البنود والشروط</span>
+                <a href="Home.html" class="submit-btn">إنشاء حساب</a>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login")
+        var y = document.getElementById("register")
+        var z = document.getElementById("btn")
+
+        function register(){
+            x.style.left = "-400px"
+            y.style.left = "50px"
+            z.style.left = "110px"
+        }
+        function login(){
+            x.style.left = "50px"
+            y.style.left = "450px"
+            z.style.left = "0px"
+        }
+    </script>
+</body>
+</html>
